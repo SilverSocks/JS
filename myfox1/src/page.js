@@ -1,9 +1,13 @@
-const change_button = document.getElementById(change_button);
-const color_name = document.getElementById(color_name);
+const change_button = document.getElementById("change_button");
+const color_name = document.querySelector(".color_name");
 const colors = ['#B9F3FC', '#AEE2FF', '#93C6E7', '#FEDEFF'];
-change_button.addEventListener("click", () => {});
+change_button.addEventListener("click", () => {
+    console.log('click');
+});
 
 
 function randomNumber(){
-
+console.log(Math.random());
 }
+
+randomNumber();

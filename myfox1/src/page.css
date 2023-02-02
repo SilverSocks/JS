@@ -15,14 +15,17 @@ body {
     letter-spacing: 8px;
     text-transform: uppercase;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
- }
-.color-container{
+}
+
+.color-container {
 
 }
+
 .change_button {
     box-sizing: border-box;
 

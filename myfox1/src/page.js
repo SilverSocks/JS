@@ -1,13 +1,16 @@
-const change_button = document.getElementById("change_button");
+const change_button = document.querySelector(".change_button");
 const color_name = document.querySelector(".color_name");
-const colors = ['#B9F3FC', '#AEE2FF', '#93C6E7', '#FEDEFF'];
-change_button.addEventListener("click", () => {
-    const randomColor = randomNumber();
-});
+const colors = ['#B9F3FC', '#AEE2FF', '#93C6E7', '#FEDEFF', '#C0EEE4', '#F8F988', '#FFCAC8', '#FF9E9E'];
 
-
-function randomNumber(){
-console.log(Math.random());
+function getRandomNumber() {
+    return Math.floor(Math.random() * colors.length);
 }
+        change_button.addEventListener("click", () => {
+            const randomColor = getRandomNumber();
 
-randomNumber();
+            document.body.style.backgroundColor = colors[randomColor];
+            color_name.textContent = colors[randomColor];
+            console.log(randomColor);
+        });
+
+getRandomNumber();

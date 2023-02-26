@@ -11,13 +11,14 @@
 <div class="h1">
 <h1>Our menu</h1></div>
 <div class="sort_buttons">
-    <button class="button button_all">All</button>
-    <button class="button button_breakfast">Breakfast</button>
-    <button  class="button button_lunch">Lunch</button>
-    <button class="button button_drinks">Drinks</button>
-    <button  class="button button_deserts">Deserts</button>
+    <button type = "button" class="button button_all active"  data-id="meal_all">All</button>
+    <button type = "button" class="button button_breakfast"  data-id="breakfast">Breakfast</button>
+    <button type = "button" class="button button_main_dishes"  data-id="main_dishes">Main dishes</button>
+    <button type = "button" class="button button_drinks" data-id="drinks">Drinks</button>
+    <button type = "button" class="button button_deserts"  data-id="deserts">Deserts</button>
 </div></div>
 <div class="meals">
+    <div class="flex-content">
     <div class="meal_all breakfast">
         <img class="meal_img" src="https://www.maggi.ru/data/images/recept/img640x500/recept_3628_kg63.jpg"
              alt="pancakes">
@@ -27,7 +28,7 @@
                 <h2 class="meal_price">$ 2.0</h2>
             </div>
             <div>
-                <p class="meal_description">Shrove Tuesday, or pancake day in the UK and Ireland, is the day for eating English-style pancakes. The holiday is the equivalent of Mardi Gras, the day before Ash Wednesday, which leads to the 40-day Lenten period of food abstinence according to Catholic and some Protestant church law. </p>
+                <p class="meal_description">Shove Tuesday, or pancake day in the UK and Ireland, is the day for eating English-style pancakes. The holiday is the equivalent of Mardi Gras, the day before Ash Wednesday, which leads to the 40-day Lenten period of food abstinence according to Catholic and some Protestant church law. </p>
             </div>
         </div>
     </div>
@@ -227,7 +228,8 @@
             </div>
         </div>
     </div>
-
+    </div>
+<script src="page.js"></script>
 </div>
 </body>
 </html>

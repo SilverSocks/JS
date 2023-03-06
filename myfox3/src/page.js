@@ -72,12 +72,10 @@ function quickSort(arr) {
         currentItem,
         ...more];
 }
-console.log(mergeSort(s));
-const mergeSort = function merge(arr) {
-    if (arr <= 1) return arr;
 
-    const left = merge(arr.slice(0, arr.length / 2));
-    const right = merge(arr.slice(arr.length / 2, arr.length));
+function mergeSort(arr){
+    const left = arr.slice(0, arr.length / 2);
+    const right = arr.slice(arr.length / 2, arr.length);
 
     let i = 0, j = 0;
     const sorted_array = [];
@@ -95,9 +93,10 @@ const mergeSort = function merge(arr) {
         }
     }
     if (i !== left.length) {
-       return  sorted_array.concat(left.slice(i, left.length));
+        return sorted_array.concat(left.slice(i, left.length));
     } else if (j !== right.length) {
-       return  sorted_array.concat(right.slice(j, right.length));
+        return sorted_array.concat(right.slice(j, right.length));
     }
     return sorted_array;
 }
+console.log(mergeSort(s));
